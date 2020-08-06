@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GAWDS eMarket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/home.css" rel="stylesheet">
+  </head>
+  <body>
+		<div id="topnav">
+		<a class="navbutton down" href="products.php">Products</a>
+		<a class="navbutton down" href="register.php">Register/Login</a>
+		<a class="navbutton" href="#buyhow">How to Buy</a>
+		<a class="navbutton" href="#sellhow">How to Sell</a>
+		<a class="navbutton" href="#aboutus">About Us</a>
+		</div>
+		<div id="tellArea">
+			<span>An e-place in NIT Kurukshetra to sell and buy things.<br>
+			It's Summer, buy <u>Cooler</u>.<br>
+			You feel music, buy <u>Speakers</u>.<br>
+			You need comfort, buy another <u>Mattress</u>.<br>
+			You've got stuffs, sell if you don't use them anymore.
+			</span>
+		</div>
+		<div id="buyhow" class="how">
+			<li>Check out our products page.
+			<li>Contact the seller of the product directly.
+			<br>
+			<br>
+		    <br>
+			<a class="nowbox" href="products.php">View Products</a>
+		</div>
+		<div id="sellhow" class="how">
+			<li>Register your seller account.
+			<li>Add as many products as you want.
+			<li>They are automatically showed on website after approval.
+			<a class="nowbox" href="register.php">Sell Now</a>
+		</div>
+		<div class="how" id="aboutus">
+			<span>GAWDS is Graphics and Web Development Squad of NIT Kurukshetra. More about us, here <a href="http://gawds.in">gawds.in</a></span>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click',function (e) {
+			e.preventDefault();
+
+			var target = this.hash,
+			$target = $(target);
+	
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+				}, 2000, 'swing', function () {
+				window.location.hash = target;
+				});
+			});
+		});
+		</script>
+  </body>
+</html>

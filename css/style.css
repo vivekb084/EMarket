@@ -1,0 +1,262 @@
+@font-face{
+font-family: accent;
+src: url('../fonts/accent.ttf');
+}
+@font-face{
+font-family: vetka;
+src: url('../fonts/Vetka.otf');
+}
+@font-face{
+font-family: gabriela;
+src: url('../fonts/Gabriela.woff');
+}
+body{
+    margin:0;
+    background:rgba(150,150,150,0.1);
+}
+#topnav{
+    position:relative;
+    width:100%;
+    padding:0.5% 0% 0.5% 0;
+    text-align:center;
+    box-shadow:1px 1px 10px rgb(200,200,100);
+    background:white;
+}
+a.navbutton{
+    display:inline-block;
+    width:8vw;
+    min-width:70px;
+    padding:1% 2% 1% 2%;
+    background:rgb(200,200,100);
+    text-align:center;
+    color:white;
+    font-family:segoe script;
+    cursor:pointer;
+    border-radius:1vmin;
+    border:1px solid rgb(200,200,100);
+    text-decoration:none;
+    margin:1% 10% 1% 10%;
+}
+a.navbutton:hover{
+    border:1px solid rgb(250,250,100);
+}
+#adplace{
+    padding-top:5%;
+    display:inline-block;
+    background:white;
+    border:1px solid rgba(200,200,100,0.5);
+    text-align:center;
+    min-width:310px;
+    margin:15px 5% 5vh 5%;
+    width:90%;
+}
+@media screen and (max-width:400px){
+    a.navbutton{
+//        font-size:10px;
+    }
+    .ad{
+        width:200px;
+        height:250px;
+    }
+}
+@media screen and (min-width:400px){
+    .ad{
+       width:300px;
+       height:350px;
+    }
+}
+.ad{
+    position:relative;
+    display:inline-block;
+    background:white;
+    box-shadow:0.2vmin 0.5vmin 1vmin rgba(200,200,100,0.5);
+    border:1px solid rgba(100,100,100,0.2);
+    cursor:pointer;
+    margin:0% 5% 100px 5%;
+}
+.ad::after{
+    content:'';
+    background:grey;
+    position:absolute;
+    width:100%;
+    height:2px;
+    left:0;
+    bottom:-80px;
+}
+.ad .title{
+    display:block;
+    min-height:18%;
+    border-radius:2vmin 2vmin 0 0;
+    padding:2%;
+    border-bottom:1px solid grey;
+    text-align:center;
+}
+.ad .photo{
+    display:block;
+    height:72%;
+    padding:2%;
+    border-radius:0 0 2vmin 2vmin;
+}
+.photo img{
+    width:100%;
+    height:100%;
+}
+#stamp{
+    position:absolute;
+    width:80%;
+    height:60%;
+    top:20%;
+    left:10%;
+    display:none;
+}
+.traffic{
+    position:absolute;
+    top:0;
+    left:-20%;
+    width:20%;
+    height:100%;
+    border:1px solid black;
+    box-shadow:-5px 1px 5px grey;
+    border-radius:1vmin;
+    background:lightgrey;
+    display:none;
+}
+.traffic li{
+    list-style-type:none;
+}
+.traffic li:nth-child(1){
+    display:block;
+    height:22%;
+    width:100%;
+    border-bottom:1px solid white;
+    text-align:center;
+    color:white;
+}
+.traffic li:nth-child(1) span{
+    position:relative;
+    top:30%;
+    font-family:tahoma;
+}
+.traffic li:nth-child(n+2){
+    display:block;
+    width:8vmin;
+    height:8vmin;
+    border-radius:50%;
+    margin-bottom:25%;
+}
+.traffic li:nth-child(2){
+    background:rgb(200,10,10);    
+}
+.traffic li:nth-child(3){
+    background:rgb(250,230,0);    
+}
+.traffic li:nth-child(4){
+    background:rgb(50,200,10);    
+}
+.ad .price{
+    position:absolute;
+    bottom:-50px;
+    width:95%;
+    text-align:center;
+    padding:2%;
+    font-family:open sans;
+}
+.bid{
+    background:orange;
+    font-style:italic;
+    padding:4%;
+    float:right;
+    color:white;
+    font-size:1.3em;
+    cursor:pointer;
+}
+.bid:hover{
+    color:black;
+}
+#item{
+    position:fixed;
+    top:10%;
+    left:15%;
+    width:60%;
+ //   height:60%;
+    background:white;
+    border:2px solid black;
+    border-radius:2vmin;
+    float:left;
+    padding:5%;
+    z-index:-1;
+    opacity:0;
+    transition: all 1s;
+}
+#item .pic{
+    display:inline-block;
+    float:left;
+    width:40%;
+    height:400px;
+}
+#item .pic img{
+    width:100%;
+    height:100%;
+}
+#item .description{
+    display:inline-block;
+    float:left;
+    width:55%;
+    height:100%;
+    margin-left:5%;
+    text-align:justify;
+}
+#item .description #name{
+    text-align:center;
+    font-weight:bold;
+    font-size:150%;
+    font-family:open sans;
+    margin-bottom:2%;
+}
+#item .description #cost{
+    color:green;
+    font-family:segoe script;
+    font-size:200%;
+    margin-top:2%;
+    letter-spacing:-2px;
+}
+#item .description #contact h4{
+    text-align:center;
+    font-family:open sans;
+}
+#item #close{
+    font-family:tahoma;
+    position:absolute;
+    top:2%;
+    right:2%;
+    font-size:200%;
+    cursor:pointer;
+}
+#item #close:hover{
+    transform:scale(0.9,0.9);
+}
+.loading{
+    width:100px;
+    height:100px;
+}
+.pid{
+	display:none;
+}
+#bottom{
+    position:fixed;
+    bottom:0;
+    background:white;
+    width:100%;
+    padding:0.5%;
+    text-align:center;
+    color:black;
+    font-family:segoe ui;
+    border:1px solid black;
+}
+#bottom a{
+    color:black;
+}
+#adplace span{
+    display:inline-block;
+    width:100%;
+}

@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    min-width:350px;
+}
+#dashmenu{
+    width:100%;
+    box-shadow:1px 1px 5px grey;
+    padding:20px 0 20px 0;
+}
+.add{
+    text-decoration:none;
+    display:inline-block;
+    padding:10px;
+    background:lightgreen;
+    border-radius:5px;
+    color:white;
+    font-family:calibri;
+    font-weight:bold;
+    margin-left:5%;
+}
+.add:hover{
+    background:green;
+}
+#seller{
+    display:inline-block;
+    float:right;
+    margin-right:20px;
+}
+#sellername{
+    cursor:pointer;
+    font-family:segoe script;
+}
+#seller #log{
+    list-style-type:none;
+    background:whitesmoke;
+    padding:5px;
+    font-family:segoe ui;
+    display:none;
+}
+#seller #log li{
+    cursor:pointer;
+    text-align:center;
+}
+#seller #log li:hover{
+    text-decoration:underline;
+}
+#products{
+    //display:inline-block;
+    padding:10px;
+    //width:80%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:20px;
+    //background:red;
+}
+#products li{
+    list-style-type:none;
+    padding:20px;
+    background:rgba(200,200,100,0.2);//whitesmoke;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+#products li a:nth-child(2){
+    float:right;
+    background:red;
+    padding:5px;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:calibri;
+}
+#products li a:nth-child(2):hover{
+    color:black;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Seller Dashboard</title>
+		<link href="css/dashboard.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="dashmenu">
+			<a id="add" href="add">Add Product</a>
+			<div id="seller"><span id="sellername" onclick="menu();">Hi, Harsh Choudhary&#x25BC;</span>
+				<div id="log">
+					<li>Manage
+					<li>Logout
+				</div>
+			</div>
+		</div>
+		<div id="products">
+			<li><a href="sfd">Product 1</a><a class="delete" href="delete1">Delete</a>
+			<li><a href="sfd">Product 2</a><a class="delete" href="delete1">Delete</a>
+			<li><a href="sfd">Product 3</a><a class="delete" href="delete1">Delete</a>
+		</div>
+		<script>
+			var menu_flag=false;
+			function menu(){
+				if(!menu_flag){
+					document.getElementById('log').style.display='block';
+					menu_flag=true;
+				}
+				else{
+					document.getElementById('log').style.display='none';
+					menu_flag=false;
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+@font-face{
+font-family: agency;
+src: url('../fonts/agency.ttf');
+}
+
+body{
+    margin:0;
+    //background: linear-gradient(white 20%, rgba(200,200,100,0.2) 100%);
+    //background: -webkit-linear-gradient(white 20%, rgba(200,200,100,0.2) 100%);
+    //background-position:fixed;
+    background:white;
+    min-height:100vh;
+}
+#topnav{
+    position:relative;
+    width:100%;
+    padding:1% 0% 1% 0;
+    text-align:center;
+    box-shadow:1px 1px 10px rgb(200,200,100);
+    background:url('../images/gawds.jpg');//white;
+    background-attachment:fixed;
+    background-position:0% 55%;
+    //background-size:100% 100%;
+}
+a.navbutton{
+    display:inline-block;
+    min-width:70px;
+    padding:1% 1% 1% 1%;
+    background:rgba(0,0,0,0.2);
+    text-align:center;
+    color:white;
+    font-family:segoe script;
+    cursor:pointer;
+    border-radius:1vmin;
+    border:1px solid rgb(200,200,100);
+    text-decoration:none;
+    margin:2% 10% 3% 10%;
+}
+a.navbutton:hover{
+    border:1px solid black;
+}
+a.down:hover{
+    border:1px solid darkgreen;
+}
+#tellArea{
+    //margin:5% 10% 0 10%;   
+    padding-top:10%;
+    padding-bottom:10%;
+    width:100%;
+    list-style-type:none;
+    font-family:dauphin;   
+    font-size:5vmin;
+    color:grey;
+    text-align:center;
+}
+.how{
+    position:relative;
+    width:96%;
+    background:red;
+    min-height:30vh;
+    list-style-type:none;
+    color:black;
+    font-family:agency;
+    padding:2%;
+    font-size:1.3em;
+    letter-spacing:1px;
+    word-spacing:1px;
+    color:rgba(2,3,4,0.5);
+    text-shadow:1px 1px 0px rgba(0,0,0,0.05);
+    //border:1px solid black;
+    text-align:center;
+}
+#buyhow{
+    background:rgb(150,210,150);
+    box-shadow:0px -1px 10px rgb(150,210,150);
+}
+#sellhow{
+    background:rgb(200,100,100);
+    color:white;
+}
+#aboutus{
+    width:100%;
+    border:none;
+    text-align:center;
+    background:url('../images/gawds.jpg');
+    background-attachment:fixed;
+    //background-size:100% 100%;
+    background-position:50% 100%;
+    color:white;
+}
+#aboutus span{
+    display:inline-block;
+    margin-top:5%;
+}
+#aboutus a{
+    color:white;
+}
+.nowbox{
+    position:absolute;
+    display:inline-block;
+    bottom:4%;
+    right:1%;
+    padding:2% 2% 2% 2%;
+    text-align:center;
+    color:black;
+    font-family:segoe script;
+    cursor:pointer;
+    border:1px solid rgba(200,200,100,0);
+}
+.nowbox:hover{
+    border:1px solid white;
+}

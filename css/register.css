@@ -1,0 +1,176 @@
+body{
+    margin:0;
+    text-align:center;
+}
+#telling{
+    font-family:segoe ui;
+    margin-top:2%;
+    font-size:1.5em;
+    color:grey;
+}
+form{
+    margin-top:2%;
+    display:inline-block;
+    padding:2%;
+    padding-top:1%;
+    text-align:center;
+    border:1px solid rgba(200,200,100,0.5);
+    box-shadow:1px 1px 10px grey;
+    background:white;
+}
+form textarea{
+    width:90%;
+    min-height:150px;
+}
+input,select{
+    display:inline-block;
+    padding:3%;
+    width:90%;
+    margin-bottom:2%;
+    background:rgb(250,250,250);
+    border:1px solid rgba(250,250,250,0);
+    box-shadow:0px 1px 2px grey;
+    font-size:1em;
+    font-family:calibri;
+    color:grey;
+}
+input:focus{
+    border:1px solid green;
+    box-shadow:0px 1px 2px rgb(200,200,100);
+    color:black;
+    font-family:segoe script;
+    font-size:0.8em;
+}
+#registerform div{
+    //float:left;
+    display:inline-block;
+    margin-right:5%;
+    width:40%;
+    min-width:200px;
+    //background:red;
+}
+#registerform #addressbar{
+    display:inline-block;
+    width:100%;
+    font-family:tahoma;
+    margin-top:15%;
+    margin-bottom:4%;
+    font-size:1em;
+    color:grey;
+}
+.submit{
+    width:35%;
+    padding:2%;
+    border-radius:5px;
+    background:rgb(200,200,100);
+    color:white;
+    cursor:pointer;
+    margin-top:50px;
+}
+.submit:hover{
+    border:1px solid white;
+}
+#topnav{
+    position:relative;
+    width:100%;
+    padding:0.5% 0% 0.5% 0;
+    text-align:center;
+    box-shadow:1px 1px 10px rgb(200,200,100);
+    background:white;
+}
+a.navbutton{
+    display:inline-block;
+    width:8vw;
+    min-width:70px;
+    padding:1% 2% 1% 2%;
+    background:rgb(200,200,100);
+    text-align:center;
+    color:white;
+    font-family:segoe script;
+    cursor:pointer;
+    border-radius:1vmin;
+    border:1px solid rgb(200,200,100);
+    text-decoration:none;
+    margin:1% 5% 1% 5%;
+}
+a.navbutton:hover{
+    border:1px solid rgb(250,250,100);
+}
+a.down{
+    background:white;
+    color:rgb(200,200,100);
+    padding:1% 1% 1% 1%;
+    border:white;
+    text-decoration:underline;
+}
+a.down:hover{
+    border:white;
+}
+#loginform{
+    margin-left:10%;
+    vertical-align:top;
+}
+form h2{
+    font-family:vetka;
+    color:green;
+}
+#preview{
+    width:200px;
+    height:200px;
+}
+#bottom{
+    position:fixed;
+    bottom:0;
+    background:white;
+    width:100%;
+    padding:0.5%;
+    text-align:center;
+    color:black;
+    font-family:segoe ui;
+    border:1px solid black;
+}
+#bottom a{
+    color:black;
+}
+#dashmenu{
+    width:100%;
+    box-shadow:1px 1px 5px grey;
+    padding:20px 0 20px 0;
+}
+.add{
+    text-decoration:none;
+    display:inline-block;
+    padding:10px;
+    background:lightgreen;
+    border-radius:5px;
+    color:white;
+    font-family:calibri;
+    font-weight:bold;
+    margin-left:5%;
+}
+.add:hover{
+    background:green;
+}
+#seller{
+    display:inline-block;
+    float:right;
+    margin-right:20px;
+}
+#sellername{
+    cursor:pointer;
+    font-family:segoe script;
+}
+#seller #log{
+    list-style-type:none;
+    background:whitesmoke;
+    padding:5px;
+    font-family:segoe ui;
+    display:none;
+}
+#seller #log li{
+    cursor:pointer;
+    text-align:center;
+}
+#seller #log li:hover{
+    text-decoration:underline;
+}
